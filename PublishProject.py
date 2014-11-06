@@ -42,7 +42,7 @@ class PublishProject(sublime_plugin.EventListener):
 	def isExcluded(self, excludes, item):
 		if not excludes == None:
 			for excluded in excludes:
-				if excluded in item:
+				if excluded == item:
 					print(item + " is excluded")
 					return True
 
