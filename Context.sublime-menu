@@ -1,0 +1,8 @@
+[
+	{"caption":"-", "id":"side-bar-start-separator"},
+	{
+		"caption": "Publish Project",
+		"id": "publishproject",
+		"command": "publish_project"
+	}
+]

@@ -1,0 +1,5 @@
+[
+	{
+		"keys": ["ctrl+shift+p"], "command": "publish_project"
+	}
+]
