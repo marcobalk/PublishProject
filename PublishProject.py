@@ -35,7 +35,8 @@ class PublishProject(sublime_plugin.EventListener):
 									if not self.isExcluded(excludes, folderPath):
 										p = subprocess.Popen([command, folderPath], stdout=subprocess.PIPE)
 										out, err = p.communicate()
-										print (out.decode('utf-8'))
+										if out:
+											print (out.decode('utf-8'))
 										if not err == None:
 											print (err.decode('utf-8'))
 
